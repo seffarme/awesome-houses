@@ -132,10 +132,7 @@ GEM
       racc (~> 1.4)
     nokogiri (1.11.1-x86_64-linux)
       racc (~> 1.4)
-<<<<<<< HEAD
-=======
-    orm_adapter (0.5.0)
->>>>>>> 8fbb3c26de954961b27f14de859ff776cc1532ee
+
     pg (1.2.3)
     pry (0.13.1)
       coderay (~> 1.1)
