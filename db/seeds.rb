@@ -35,12 +35,6 @@ red = User.create( username: 'red',
              password: 'azerty',
              )
 
-Property.create!( user_id: admin.id,
-                  title: 'Disneyland',
-                  price: '400',
-                  description: "Endroit féérique. Attention, on nous a signalez des chiens qui parlaient...",
-                  category: 'funny' )
-
 puts "Finished!"
 
 puts "Creating properties..."
@@ -98,6 +92,12 @@ Property.create!( user_id: green.id,
                   price: '200',
                   description: "Maison charmante et qui saura vous charmer",
                   category: 'maison' )
+
+Property.create!( user_id: green.id,
+                  title: 'Donjon Rouge - Port-Royal',
+                  price: '600',
+                  description: "Jolie vue - les sièges peuvent piquer",
+                  category: 'Donjon' )
 
 
 puts "Finished! #{Property.count} properties created"
