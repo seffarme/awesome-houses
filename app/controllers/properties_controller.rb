@@ -9,14 +9,12 @@ class PropertiesController < ApplicationController
   end
 
   def new
-    @user = User.find(params[:user_id])
     @property = Property.new
   end
 
   def create
       @property = Property.new(property_params)
-      @user = User.find(params[:user_id])
-      @property.user = @user
+      @property.user = current_user
     if @property.save
       redirect_to root_path
     else
