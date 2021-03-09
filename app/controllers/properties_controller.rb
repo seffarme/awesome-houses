@@ -6,6 +6,7 @@ class PropertiesController < ApplicationController
   # end
 
   def show
+
   end
 
   def new
@@ -42,6 +43,6 @@ class PropertiesController < ApplicationController
   end
 
   def property_params
-    params.require(:property).permit(:title, :price, :description, :category)
+    params.require(:property).permit(:title, :price, :description, :category, photos: [])
   end
 end

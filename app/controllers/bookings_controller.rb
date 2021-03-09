@@ -1,5 +1,6 @@
 class BookingsController < ApplicationController
   before_action :set_property, only: [:edit, :update]
+  
   def new
     @property = Property.find(params[:property_id])
     @booking = Booking.new
