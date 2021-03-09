@@ -2,6 +2,9 @@
   <div class="details">
     <div class="card1">
       <h3><%= @property.title %></h3>
+      <% @property.photos.each do |photo| %>
+        <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
+      <% end %>
   </div>
   <div class="card2">
       <h5>A bit more details</h5>

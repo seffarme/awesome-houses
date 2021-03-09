@@ -5,6 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
 puts "Cleaning database..."
 Property.destroy_all
 User.destroy_all
@@ -35,15 +37,12 @@ red = User.create( username: 'red',
              password: 'azerty',
              )
 
-Property.create!( user_id: admin.id,
-                  title: 'Disneyland',
-                  price: '400',
-                  description: "Endroit féérique. Attention, on nous a signalez des chiens qui parlaient...",
-                  category: 'funny' )
+
 
 puts "Finished!"
 
 puts "Creating properties..."
+
 
 Property.create!( user_id: blue.id,
                   title: 'Disneyland',
@@ -55,7 +54,8 @@ Property.create!( user_id: blue.id,
                   title: 'Harry Potter Castle',
                   price: '500',
                   description: "Un portrait peut en cacher un autre",
-                  category: 'château' )
+                  category: 'château',
+                  )
 
 Property.create!( user_id: blue.id,
                   title: 'Maman j ai raté l avion',
