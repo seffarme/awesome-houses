@@ -7,29 +7,30 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 puts "Cleaning database..."
 
+Property.destroy_all
 User.destroy_all
 
 puts "Creating user..."
 
-User.create( username: 'violet',
+violet = User.create( username: 'violet',
              phone: '1234560',
              email: 'violet@gmail.com',
              password: 'azerty',
             )
 
-User.create( username: 'blue',
+blue = User.create( username: 'blue',
              phone: '0123456',
              email: 'blue@gmail.com',
              password: 'azerty',
              )
 
-User.create( username: 'green',
+green = User.create( username: 'green',
              phone: '0123456',
              email: 'green@gmail.com',
              password: 'azerty',
              )
 
-User.create( username: 'red',
+red = User.create( username: 'red',
              phone: '0124356',
              email: 'red@gmail.com',
              password: 'azerty',
@@ -37,3 +38,62 @@ User.create( username: 'red',
 
 
 puts "Finished!"
+
+puts "Creating properties..."
+
+Property.create!( user_id: blue.id,
+                  title: 'Disneyland',
+                  price: '400',
+                  description: "Endroit féérique. Attention, on nous a signalez des chiens qui parlaient...",
+                  category: 'château' )
+
+Property.create!( user_id: blue.id,
+                  title: 'Harry Potter Castle',
+                  price: '500',
+                  description: "Un portrait peut en cacher un autre",
+                  category: 'château' )
+
+Property.create!( user_id: blue.id,
+                  title: 'Maman j ai raté l avion',
+                  price: '200',
+                  description: "Jolie maison, un oeil attentif est requis",
+                  category: 'maison' )
+
+Property.create!( user_id: red.id,
+                  title: 'Tour de Sarruman',
+                  price: '150',
+                  description: "Etage élevé",
+                  category: 'tour' )
+
+Property.create!( user_id: red.id,
+                  title: 'Breaking Bad',
+                  price: '50',
+                  description: "Un peu vétuste",
+                  category: 'camping-car' )
+
+Property.create!( user_id: violet.id,
+                  title: 'Millenium Falcon',
+                  price: '300',
+                  description: "Des connaissances en techniques sont requises. Permet de nombreux déplacements",
+                  category: 'vaisseau' )
+
+Property.create!( user_id: violet.id,
+                  title: 'Shinning',
+                  price: '200',
+                  description: "Hôtel excentré, au calme",
+                  category: 'hôtel' )
+
+Property.create!( user_id: green.id,
+                  title: 'Lampe du génie',
+                  price: '100',
+                  description: "Plus grand qu'il n'y parait",
+                  category: 'insolite' )
+
+Property.create!( user_id: green.id,
+                  title: 'Charmed',
+                  price: '200',
+                  description: "Maison charmante et qui saura vous charmer",
+                  category: 'maison' )
+
+
+puts "Finished! #{Property.count} properties created"
