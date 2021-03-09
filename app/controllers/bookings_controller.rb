@@ -1,6 +1,5 @@
 class BookingsController < ApplicationController
   before_action :set_property, only: [:edit, :update]
-  # before_action :authenticate_user!
 
   def new
     @property = Property.find(params[:property_id])

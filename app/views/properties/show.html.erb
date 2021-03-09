@@ -1,19 +1,24 @@
-<div class="details">
+<div class="container">
+  <div class="details">
     <div class="card1">
       <h3><%= @property.title %></h3>
+      <% @property.photos.each do |photo| %>
+        <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
+      <% end %>
   </div>
   <div class="card2">
       <h5>A bit more details</h5>
       <p><%= @property.description %></p>
   </div>
-<div class="cardright">
-  <p><%= @property.category%></p>
-      <p><%= @property.price%> <i class="fas fa-euro-sign"></i></p>
-</div>
+  <div class="cardright">
+    <p><%= @property.category%></p>
+        <p><%= @property.price%> <i class="fas fa-euro-sign"></i></p>
+  </div>
 
-<p><%= link_to 'Edit', edit_property_path(@property) %></p>
-<p><%= link_to 'Destroy', property_path(@property), method: :delete, data: { confirm: 'Are you sure?' } %></p>
+  <p><%= link_to 'Edit', edit_property_path(@property) %></p>
+  <p><%= link_to 'Destroy', property_path(@property), method: :delete, data: { confirm: 'Are you sure?' } %></p>
 
+  </div>
 </div>
 
 
