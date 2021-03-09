@@ -17,4 +17,3 @@ User.create( username: 'admin',
 
 
 puts "Finished!"
-
