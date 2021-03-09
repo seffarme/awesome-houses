@@ -1,6 +1,6 @@
 class BookingsController < ApplicationController
   before_action :set_property, only: [:edit, :update]
-  
+
   def new
     @property = Property.find(params[:property_id])
     @booking = Booking.new
@@ -10,11 +10,14 @@ class BookingsController < ApplicationController
     @property = Property.find(params[:property_id])
     @booking = Booking.new(booking_params)
     @booking.property = @property
-    if @booking.save
-      redirect_to property_path
+    @booking.user = current_user
+
+    if (Time.now - 1.days) < @booking.checkin && @booking.checkin < @booking.checkout && @booking.save
+      redirect_to property_path(@property)
     else
       render :new
     end
+
   end
 
   def edit
