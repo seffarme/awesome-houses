@@ -11,7 +11,7 @@ puts "Cleaning database..."
 Property.destroy_all
 User.destroy_all
 
-puts "Creating user..."
+puts "Creating users..."
 
 violet = User.create( username: 'violet',
              phone: '1234560',
@@ -37,9 +37,7 @@ red = User.create( username: 'red',
              password: 'azerty',
              )
 
-
-
-puts "Finished!"
+puts "#{User.count} created"
 
 puts "Creating properties..."
 
@@ -98,6 +96,12 @@ Property.create!( user_id: green.id,
                   price: '200',
                   description: "Maison charmante et qui saura vous charmer",
                   category: 'maison' )
+
+Property.create!( user_id: green.id,
+                  title: 'Donjon Rouge - Port-Royal',
+                  price: '600',
+                  description: "Jolie vue - les sièges peuvent piquer",
+                  category: 'Donjon' )
 
 
 puts "Finished! #{Property.count} properties created"
