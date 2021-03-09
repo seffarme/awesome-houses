@@ -1,9 +1,9 @@
 class PropertiesController < ApplicationController
   before_action :find_property, only: [:show, :edit, :update, :destroy]
 
-  def index
-    @properties = Property.all
-  end
+  # def index
+  #   @properties = Property.all
+  # end
 
   def show
   end
@@ -32,7 +32,7 @@ class PropertiesController < ApplicationController
 
   def destroy
     @property.destroy
-    redirect_to properties_path
+    redirect_to root_path
   end
 
   private
