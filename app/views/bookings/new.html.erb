@@ -1,1 +1,8 @@
-Je suis dans view de booking
+<h2>Booking your choice</h2>
+<div class="container" style="width: 400px">
+  <%= simple_form_for [@property, @booking] do |f| %>
+    <%= f.input :checkin, as: :date %>
+    <%= f.input :checkout, as: :date %>
+    <%= f.button :submit, 'Book this', class: "btn btn-primary" %>
+  <% end %>
+</div>
