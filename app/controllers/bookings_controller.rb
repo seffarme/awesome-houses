@@ -1,14 +1,16 @@
 class BookingsController < ApplicationController
-  before_action :set_property, only: [:new, :create, :edit, :update]
+  before_action :set_property, only: [:edit, :update]
   def new
+    @property = Property.find(params[:property_id])
     @booking = Booking.new
   end
 
   def create
+    @property = Property.find(params[:property_id])
     @booking = Booking.new(booking_params)
     @booking.property = @property
     if @booking.save
-      redirect_to root_path
+      redirect_to property_path
     else
       render :new
     end
