@@ -5,13 +5,21 @@ before_action :set_user, only: [:show, :edit, :update, :destroy]
   def new
     @user = User.new
   end
-  
+
+  def show
+    
+  end
+
 
   def create
     @user = User.new(user_params)
     @user.save
 
     redirect_to home_path
+  end
+
+  def edit
+    
   end
 
 
@@ -32,7 +40,7 @@ before_action :set_user, only: [:show, :edit, :update, :destroy]
   private
 
   def user_params
-    params.require(:user).permit(:username, :mail, :phone, :description)
+    params.require(:user).permit(:username, :email, :phone, :description)
   end
 
   def set_user
