@@ -8,6 +8,7 @@
 
 
 puts "Cleaning database..."
+Booking.destroy_all
 Property.destroy_all
 User.destroy_all
 
@@ -46,56 +47,56 @@ Property.create!( user_id: blue.id,
                   title: 'Disneyland',
                   price: '400',
                   description: "Endroit féérique. Attention, on nous a signalez des chiens qui parlaient...",
-                  category: 'château' )
+                  category: 'Château' )
 
 Property.create!( user_id: blue.id,
                   title: 'Harry Potter Castle',
                   price: '500',
                   description: "Un portrait peut en cacher un autre",
-                  category: 'château',
+                  category: 'Château',
                   )
 
 Property.create!( user_id: blue.id,
                   title: 'Maman j ai raté l avion',
                   price: '200',
                   description: "Jolie maison, un oeil attentif est requis",
-                  category: 'maison' )
+                  category: 'Maison' )
 
 Property.create!( user_id: red.id,
                   title: 'Tour de Sarruman',
                   price: '150',
                   description: "Etage élevé",
-                  category: 'tour' )
+                  category: 'Tour' )
 
 Property.create!( user_id: red.id,
                   title: 'Breaking Bad',
                   price: '50',
                   description: "Un peu vétuste",
-                  category: 'camping-car' )
+                  category: 'Camping-car' )
 
 Property.create!( user_id: violet.id,
                   title: 'Millenium Falcon',
                   price: '300',
                   description: "Des connaissances en techniques sont requises. Permet de nombreux déplacements",
-                  category: 'vaisseau' )
+                  category: 'Vaisseau' )
 
 Property.create!( user_id: violet.id,
                   title: 'Shinning',
                   price: '200',
                   description: "Hôtel excentré, au calme",
-                  category: 'hôtel' )
+                  category: 'Hôtel' )
 
 Property.create!( user_id: green.id,
                   title: 'Lampe du génie',
                   price: '100',
                   description: "Plus grand qu'il n'y parait",
-                  category: 'insolite' )
+                  category: 'Insolite' )
 
 Property.create!( user_id: green.id,
                   title: 'Charmed',
                   price: '200',
                   description: "Maison charmante et qui saura vous charmer",
-                  category: 'maison' )
+                  category: 'Maison' )
 
 Property.create!( user_id: green.id,
                   title: 'Donjon Rouge - Port-Royal',
