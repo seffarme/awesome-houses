@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+puts "create properties"
+
+Property.create(title: "millenium", price: 150, description: "grand vaisseau, vitesse lumière")
+Property.create(title: "la contree", price: 100, description: "convient aux arrondis")
+
+puts "#{Property.count}"
