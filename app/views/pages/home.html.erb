@@ -5,7 +5,19 @@
       <p>You're at the right place, make your choice and enjoy a fabulous stay !</p>
       <div class="row">
         <div class="col-sm-6">
-          <a class="btn btn-primary mb-3" href="/properties">I want to pick up one</a>
+          <form class="form-horizontal" role="form" id="search">
+            <div class="form-group">
+              <label for="filter">Filter by category</label>
+              <select class="form-control">
+                <% Property::CATEGORIES.sort.each do |cat| %>
+                  <option value='<% "#{cat}" %>'> <%= cat %> </option>
+                <% end %>
+              </select>
+            </div>
+            <button name="button" type="submit" class="btn btn-flat">
+              <i class="fas fa-search"></i> Search
+            </button>
+          </form>
         </div>
         <div class="col-sm-6">
           <a class="btn btn-secondary mb-3" href="/properties/new">I have a property to rent</a>
@@ -13,13 +25,15 @@
       </div>
     </div>
 
+
+
     <h2>All our properties</h2>
-      <div class="row">
+    <div class="row">
     <% @properties.each do |property| %>
       <div class="card">
         <div class="card-body">
           <h5 class="card-title"><%= link_to property.title, property_path(property) %></h5>
-       </div>
+        </div>
         <div class="card-footer">
           <%= property.price %> <i class="fas fa-euro-sign"></i>
           <%= property.category %>
