@@ -5,10 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+puts "Cleaning database..."
+User.destroy_all
 
-puts "create properties"
+puts "Creating user..."
 
-Property.create(title: "millenium", price: 150, description: "grand vaisseau, vitesse lumière")
-Property.create(title: "la contree", price: 100, description: "convient aux arrondis")
+User.create( username: 'admin',
+             phone: '0123456',
+             email: 'admin@gmail.com',
+             password: 'azerty' )
 
-puts "#{Property.count}"
+
+puts "Finished!"
