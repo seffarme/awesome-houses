@@ -10,5 +10,10 @@ class PagesController < ApplicationController
       @properties = Property.all
       @selected = ""
     end
+    @markers = @properties.geocoded.map do |prop| {
+      lat: prop.latitude,
+      lng: prop.longitude
+    }
+    end
   end
 end
