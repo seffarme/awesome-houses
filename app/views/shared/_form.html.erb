@@ -1,9 +1,9 @@
 <%= simple_form_for(property) do |f| %>
-  <%= f.input :title %>
-  <%= f.input :category, collection: Property::CATEGORIES, class: 'form-control beautiful-dropdown', include_hidden: false %>
+  <%= f.input :title,  label: "Nom de la propriété" %>
+  <%= f.input :category, label: "Catégorie", collection: Property::CATEGORIES, class: 'form-control beautiful-dropdown', include_hidden: false %>
   <%= f.input :description %>
-  <%= f.input :price %>
+  <%= f.input :price, label: "Prix par nuit" %>
   <%= f.input :photos, as: :file, input_html: { multiple: true } %>
 
-  <%= f.submit %>
+  <%= f.submit "Modifier la propriété"%>
 <% end %>
