@@ -21,9 +21,9 @@
 
         <div class="card-footer bg-transparent mt-4">
           <div class="col-sm d-flex justify-content-around">
-            <p class="btn btn-info"><%= link_to 'Edit', edit_property_path(@property) %></p>
-            <p class="btn btn-info"><%= link_to "Destroy", property_path(@property), method: :delete, data: { confirm: 'Are you sure?' } %></p>
-            <p class="btn btn-info"><%= link_to 'Book this', new_property_booking_path(@property) %></p>
+            <p class="btn btn-info"><%= link_to 'Modifier', edit_property_path(@property) %></p>
+            <p class="btn btn-info"><%= link_to "Supprimer", property_path(@property), method: :delete, data: { confirm: 'Souhaitez-vous vraiment supprimer?' } %></p>
+            <p class="btn btn-info"><%= link_to 'Réserver', new_property_booking_path(@property) %></p>
           </div>
        </div>
  

@@ -104,5 +104,12 @@ Property.create!( user_id: green.id,
                   description: "Jolie vue - les sièges peuvent piquer",
                   category: 'Donjon' )
 
+Property.create!( user_id: blue.id,
+                  title: 'Repaire de Quasimodo',
+                  price: '400',
+                  description: "Vous apercevrez peut-être Esmeralda",
+                  category: 'Tour',
+                  address: '6 Parvis Notre-Dame - Place Jean-Paul II, 75004 Paris')
+
 
 puts "Finished! #{Property.count} properties created"

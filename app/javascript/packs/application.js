@@ -24,14 +24,19 @@ require("channels")
 
 // External imports
 import "bootstrap";
-import { initFlatPickr } from "../plugins/flatpickr";
+// CSS
+import 'mapbox-gl/dist/mapbox-gl.css';
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 import { initUpdateNavbarOnScroll } from '../components/navbar';
+import { initFlatPickr } from "../plugins/flatpickr";
+import { initMapbox } from '../plugins/init_mapbox';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
   initFlatPickr();
   // initUpdateNavbarOnScroll();
+  initMapbox();
 });
+
