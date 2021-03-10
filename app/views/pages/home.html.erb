@@ -5,30 +5,29 @@
       <p>You're at the right place, make your choice and enjoy a fabulous stay !</p>
       <div class="row">
         <div class="col-sm-6">
-          <a class="btn btn-primary mb-3" href="/properties">I want to pick up one</a>
+           <form class="simple_form " id="filter_property" action="/properties/by_category" accept-charset="UTF-8" method="get">
+            <div class="form-group select required property_category">
+              <label class="select required" for="property_category">Filter by category</label>
+              <select class="form-control select required" name="category" id="category">
+                <% Property::CATEGORIES.sort.each do |cat| %>
+                  <% if @selected == cat %>
+                    <option value=<%= cat %> selected > <%= cat %> </option>
+                  <% else %>
+                    <option value=<%= cat %>> <%= cat %> </option>
+                  <% end %>
+                <% end %>
+              </select>
+            </div>
+            <input class="btn btn-flat" type="submit" name="commit" value="Search"
+              <i class="fas fa-search"></i>
+            </input>
+          </form>
         </div>
         <div class="col-sm-6">
-          <a class="btn btn-secondary mb-3" href="/properties/new">I have a property to rent</a>
+          <a class="btn btn-secondary mb-3" href="/properties/new" id="new_property">I have a property to rent</a>
         </div>
       </div>
     </div>
-
-    <h2>All our properties</h2>
-      <div class="row">
-    <% @properties.each do |property| %>
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title"><%= link_to property.title, property_path(property) %></h5>
-       </div>
-        <div class="card-footer">
-          <%= property.price %> <i class="fas fa-euro-sign"></i>
-          <%= property.category %>
-        </div>
-        <div class="card-infos">
-          <div id="info"> <%= link_to "More info", property_path(property)%></div>
-        </div>
-      </div>
-    <% end %>
-    </div>
+    <%= render "shared/list_of_properties" %>
   </div>
 </div>
