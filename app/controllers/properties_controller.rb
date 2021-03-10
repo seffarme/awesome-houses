@@ -37,9 +37,6 @@ class PropertiesController < ApplicationController
   end
 
   def by_category
-    puts "---->"
-    puts params
-    puts "<-----"
     redirect_to root_path(category: params[:category])
   end
 
