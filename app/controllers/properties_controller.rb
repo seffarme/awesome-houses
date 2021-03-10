@@ -1,4 +1,6 @@
 class PropertiesController < ApplicationController
+  skip_before_action :authenticate_user!, only: :show
+  before_action :authenticate_user!, only: [:new, :edit, :destroy]
   before_action :find_property, only: [:show, :edit, :update, :destroy]
 
   # def index
