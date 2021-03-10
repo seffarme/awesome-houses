@@ -1,7 +1,7 @@
 <div class="container m-4">
     <div class="row justify-content-md-center">
       <div class="col-10">
-         <div class="show-card-img mt-4">
+         <div class="card mt-4">
             <h2><%= @property.title %></h2>
             <% @property.photos.each do |photo| %>
            <div class="img-show">
@@ -10,7 +10,7 @@
             <% end %>
           </div>
 
-        <div class="show-card-description mt-4">
+        <div class="card description mt-4 p-4">
           <p><%= @property.description %></p>
           <div class="col-sm d-flex justify-content-around mt-4">
             <p>Catégorie: <%= @property.category%></p>
@@ -18,7 +18,7 @@
           </div>
         </div>
 
-        <div class="show-card-foot">
+        <div class="show-card-foot mt-4">
           <div class="col-sm d-flex justify-content-around">
             <p class="btn btn-info"><%= link_to 'Edit', edit_property_path(@property) %></p>
             <p class="btn btn-info"><%= link_to "Destroy", property_path(@property), method: :delete, data: { confirm: 'Are you sure?' } %></p>

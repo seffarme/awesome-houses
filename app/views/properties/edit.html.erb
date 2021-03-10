@@ -1,9 +1,12 @@
-<div class="container">
+<div class="container m-8">
+ <div class="card p-4">
+    <h2>Modifier la propriété</h2>
 
-<h1>Editing Property</h1>
+    <%= render 'shared/form', property: [@user, @property] %>
 
-<%= render 'shared/form', property: [@user, @property] %>
-
-<%= link_to 'Back', root_path %>
-
+    <div class="footer">
+    </br>
+      <p class="btn btn-info"><%= link_to 'Accueil', root_path %></p>
+    </div>
+  </div>
 </div>
