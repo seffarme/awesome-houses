@@ -4,6 +4,13 @@ class BookingsController < ApplicationController
   def new
     @property = Property.find(params[:property_id])
     @booking = Booking.new
+    # @bookings = Booking.where(property_id: @property.id)
+    # @dates = @bookings.map do |booking|
+    #   {
+    #     from: booking.checkin,
+    #     to: booking.checkout
+    #   }
+    # end
   end
 
   def create
@@ -12,11 +19,11 @@ class BookingsController < ApplicationController
     @booking.property = @property
     @booking.user = current_user
 
-    if (Time.now - 1.days) < @booking.checkin && @booking.checkin < @booking.checkout && @booking.save
-      redirect_to property_path(@property)
-    else
-      render :new
-    end
+    # if (Time.now - 1.days) < @booking.checkin && @booking.checkin < @booking.checkout && @booking.save
+    #   redirect_to property_path(@property)
+    # else
+      # render :new
+    # end
 
   end
 
