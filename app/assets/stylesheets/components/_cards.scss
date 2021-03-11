@@ -1,0 +1,21 @@
+.wrapper-cards {
+  display: flex;
+  flex: wrap;
+  margin-top: 25px;
+  justify-content: center;
+}
+
+.card {
+  border: 1px solid $blue-fee;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 300px;
+}
+
+.card-title {
+  text-align: center;
+  color: $blue-fee;
+  &:hover {
+    text-decoration: none; /* ne marche pas */
+  }
+}

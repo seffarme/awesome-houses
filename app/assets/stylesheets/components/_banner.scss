@@ -1,8 +1,9 @@
 .banner {
+  position: relative;
   background-size: cover;
   background-position: center;
-  padding: 150px 0;
-  height: 100vh;
+  padding: 150px 100px;
+  height: 75vh;
   .banner-content {
     background-color: rgba(0,0,0,0.6);
   }
@@ -12,7 +13,7 @@
   margin: 0;
   color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 32px;
+  font-size: 3em;
   font-weight: bold;
 }
 
@@ -20,5 +21,84 @@
   font-size: 20px;
   color: white;
   opacity: .7;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+h3 {
+  color: white;
+}
+
+.form-group {
+  width: 200px;
+  margin-bottom: 0rem;
+  border-radius: 10px 0px 0px 10px; /* ne marche pas */
+}
+#filter_property {
+  padding: 0px;
+}
+
+.wrapper-btn {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 24px;
+  align-items: flex-end;
+}
+
+.wrapper-category {
+  margin-right: 24px;
+}
+
+.btn-search {
+  color: white;
+  padding: 0px 24px;
+  border-radius: 10px;
+  background: $blue-fee;
+  transition: background 0.3s ease;
+  &:hover {
+    box-shadow: 0 4px 8px rgba(115,219,230,0.5);
+    color: white;
+  }
+}
+
+
+.wrapper-property {
+  align-self: flex-end;
+  display: flex;
+  height: 38px;
+
+}
+
+#new_property {
+}
+
+.btn-property {
+  align-items: center;
+  vertical-align: middle;
+  color: white;
+  padding: 6px 20px;
+  border-radius: 10px;
+  background: $pink-fee;
+  transition: background 0.3s ease;
+  border: 1px solid transparent;
+  &:hover {
+    text-decoration: none;
+    background: $pink-fee;
+    box-shadow: 0 4px 8px rgba(214,108,182,0.5);
+    color: white;
+    border: none;
+  }
+}
+
+hr {
+  color: white;
+  height: 10px;
+}
+
+.fa-heart {
+  position: relative;
+  bottom: 20px;
+  transform: rotate(15deg);
+  color: white;
+  font-size: 0.5em;
 }

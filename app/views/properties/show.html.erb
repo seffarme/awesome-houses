@@ -15,16 +15,25 @@
         </div>
         <div class="col-sm mt-4 p-3">
           <p>Catégorie: <%= @property.category%></p>
+          <p>Adresse: <%= @property.address%></p>
           <p>Prix: <%= @property.price%> <i class="fas fa-euro-sign"></i></p>
         </div>
 
+        <div id="map"
+        style="width: 400px; height: 300px;"
+        data-markers="<%= @markers.to_json %>"
+        data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
 
         <div class="card-footer bg-transparent mt-4">
           <div class="col-sm d-flex justify-content-around">
-            <p class="btn btn-info"><%= link_to 'Modifier', edit_property_path(@property) %></p>
-            <p class="btn btn-info"><%= link_to "Supprimer", property_path(@property), method: :delete, data: { confirm: 'Souhaitez-vous vraiment supprimer?' } %></p>
-            <p class="btn btn-info"><%= link_to 'Réserver', new_property_booking_path(@property) %></p>
+
+            <p class="btn btn-pink"><%= link_to 'Réserver', new_property_booking_path(@property) %></p>
+            <p class="btn btn-green"><%= link_to 'Accueil', root_path %></p>
           </div>
+       </div>
+
+       <div class="map">
+
        </div>
  
        <div
