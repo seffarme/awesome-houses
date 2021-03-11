@@ -5,6 +5,11 @@
       <div class="card-trip-infos">
         <div class="title-75pct">
           <h5 class="card-title"><%= link_to property.title, property_path(property) %></h5>
+          <% property.photos.each do |photo| %>
+            <div class="img-show">
+              <%= cl_image_tag photo.key, width: 250, crop: :fill %>
+            </div>
+          <% end %>
           <p>Short description here!</p>
         </div>
         <h2 class="card-trip-pricing"><%= property.price %> €</h2>
@@ -13,10 +18,3 @@
     </div>
     <% end %>
 </div>
-
-<!-- <div id="map"
-     style="width: 100%; height: 600px;"
-     data-markers="<%= @markers.to_json %>"
-     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
- -->
-
