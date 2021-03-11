@@ -1,33 +1,37 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/dnobflpja/image/upload/v1615235755/awesome-houses/iv13ujxpae9odfnslbwm.jpg);">
-  <div class="container">
-    <div class="banner-content col-sm-8 py-3">
-      <h1>Looking Awesome Houses for rent ?</h1>
-      <p>You're at the right place, make your choice and enjoy a fabulous stay !</p>
-      <div class="row">
-        <div class="col-sm-6">
-           <form class="simple_form " id="filter_property" action="/properties/by_category" accept-charset="UTF-8" method="get">
-            <div class="form-group select required property_category">
-              <label class="select required" for="property_category">Filter by category</label>
-              <select class="form-control select required" name="category" id="category"><option value=""></option>
-                <% Property::CATEGORIES.sort.each do |cat| %>
-                  <% if @selected == cat %>
-                    <option value=<%= cat %> selected > <%= cat %> </option>
-                  <% else %>
-                    <option value=<%= cat %>> <%= cat %> </option>
-                  <% end %>
-                <% end %>
-              </select>
-            </div>
-            <input class="btn btn-flat" type="submit" name="commit" value="Search">
-              <i class="fas fa-search"></i>
-            </input>
-          </form>
+<div class="banner" style="background-image: linear-gradient(243deg, rgba(214,108,182,0.4) 0%, rgba(115,219,230,0.4) 100%), url(https://res.cloudinary.com/dhj5ygysw/image/upload/v1615453447/Isengard_dkdxeo.jpg);">
+  <h1>Rent an <br>
+    Awesome Houses <i class="far fa-heart"></h1></i>
+  <h3>–––––––––––––––––</h3>
+  <p>An Airbnb like, but more fabulous!</p>
+  <div class="wrapper-btn">
+    <div class="wrapper-category">
+      <label class="select required" for="property_category">Filter by category</label>
+      <form class="simple_form col" id="filter_property" action="/properties/by_category" accept-charset="UTF-8" method="get">
+        <div class="form-group select required property_category">
+          <select class="form-control select required" name="category" id="category">
+            <% Property::CATEGORIES.sort.each do |cat| %>
+              <% if @selected == cat %>
+                <option value=<%= cat %> selected > <%= cat %> </option>
+              <% else %>
+                <option value=<%= cat %>> <%= cat %> </option>
+              <% end %>
+            <% end %>
+          </select>
         </div>
-        <div class="col-sm-6">
-          <a class="btn btn-secondary mb-3" href="/properties/new" id="new_property">I have a property to rent</a>
-        </div>
-      </div>
+        <input class="btn btn-search" type="submit" name="commit" value="Search"></input>
+      </form>
     </div>
+    <div class="wrapper-property">
+      <a class="btn-property" href="/properties/new" id="new_property">Rent my property</a>
+    </div>
+  </div>
+
+</div>
+<div class="container">
+  <div class="center-h2">
+    <h2>Magical properties</h2>
+  </div>
+  <div class="wrapper-cards">
     <%= render "shared/list_of_properties" %>
   </div>
 </div>
