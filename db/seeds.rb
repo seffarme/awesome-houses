@@ -129,13 +129,6 @@ Property.create!( user_id: thierry.id,
                   category: 'Maison',
                   address: 'Minnesota')
 
-Property.create!( user_id: thierry.id,
-                  title: 'La petite maison dans la prairie',
-                  price: '200',
-                  description: "Environnement vert- maison en constante rénovation. Situé à Plum Creek non loin du village de Walnut Grove.",
-                  category: 'Maison',
-                  address: 'Minnesota')
-
 Property.create!( user_id: laury.id,
                   title: 'Wisteria Lane',
                   price: '250',
