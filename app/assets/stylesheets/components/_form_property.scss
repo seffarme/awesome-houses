@@ -1,0 +1,76 @@
+
+/*.form-group {
+  width: 0;
+  margin: 0;
+  margin-bottom: 0;
+  border-radius: none;
+}*/
+h1 {
+  margin-top: 100px;
+  margin-bottom: 25px;
+}
+
+.wrapper-form {
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  padding: 0 100px;
+  align-items: center;
+  /*margin-top: 100px;*/
+}
+
+.form-center {
+  background-color: rgba(255,255,255,0.7);
+  z-index: 10;
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  /*flex-direction: column;*/
+  /*align-items: center;*/
+  justify-content: center;
+  border: 1px solid $blue-fee;
+  border-radius: 15px;
+  padding: 35px 0;
+  box-shadow: 0 0 10px 0px $blue-fee;
+}
+
+/*#form1 {
+  z-index: 0;
+  width: 500px;
+}*/
+.wrap-total {
+}
+
+#blah {
+  height: 100vh ;
+
+  /*width: auto;*/
+/*  position: absolute;
+  top: 0;
+  left: 0;*/
+  /*background-image: center;*/
+  /*margin-top: 0px;*/
+}
+
+#test {
+  margin-top: 15px;
+  align-items: center;
+  vertical-align: middle;
+  color: white;
+  padding: 6px 20px;
+  border-radius: 10px;
+  background: $pink-fee;
+  transition: background 0.3s ease;
+  border: 1px solid transparent;
+  &:hover {
+    text-decoration: none;
+    background: $pink-fee;
+    box-shadow: 0 4px 8px rgba(214,108,182,0.5);
+    color: white;
+    border: none;
+  }
+}
+
+.display-bg-img {
+
+}

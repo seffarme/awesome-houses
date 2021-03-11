@@ -31,6 +31,7 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import { initUpdateNavbarOnScroll } from '../components/navbar';
 import { initFlatPickr } from "../plugins/flatpickr";
 import { initMapbox } from '../plugins/init_mapbox';
+import { initReadURL } from '../components/img_preview';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
@@ -38,5 +39,6 @@ document.addEventListener('turbolinks:load', () => {
   initFlatPickr();
   initUpdateNavbarOnScroll();
   initMapbox();
+  initReadURL();
 });
 
