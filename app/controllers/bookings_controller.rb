@@ -19,11 +19,11 @@ class BookingsController < ApplicationController
     @booking.property = @property
     @booking.user = current_user
 
-    # if (Time.now - 1.days) < @booking.checkin && @booking.checkin < @booking.checkout && @booking.save
-    #   redirect_to property_path(@property)
-    # else
-      # render :new
-    # end
+    if (Time.now - 1.days) < @booking.checkin && @booking.checkin < @booking.checkout && @booking.save
+      redirect_to property_path(@property)
+    else
+      render :new
+    end
 
   end
 

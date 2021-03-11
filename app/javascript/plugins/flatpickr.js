@@ -12,7 +12,6 @@ const initFlatPickr = () => {
 	    dateFormat: "Y-m-d",
 	  })
 	}
-	console.log("hello")
 	flatpickr('.flatpickr', {})
 }
 
