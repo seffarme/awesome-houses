@@ -26,9 +26,10 @@
 
         <div class="card-footer bg-transparent mt-4">
           <div class="col-sm d-flex justify-content-around">
-
-            <p class="btn btn-pink"><%= link_to 'Réserver', new_property_booking_path(@property) %></p>
             <p class="btn btn-green"><%= link_to 'Accueil', root_path %></p>
+            <p class="btn btn-pink"><%= link_to 'Réserver', new_property_booking_path(@property) %></p>
+
+            <p class="btn btn-light"><%= link_to 'Modifier', edit_property_path(@property) %></p>
           </div>
        </div>
 
