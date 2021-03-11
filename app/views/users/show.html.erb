@@ -1,14 +1,17 @@
-<h2><%= @user.username %></h2>
-<p><%= @user.email %></p>
-<p><%= @user.phone %></p>
+<div class="container m-4">
+    <div class="row justify-content-md-center">
+      <div class="card col-10 mt-4">
+        <div class="text-center p-4">
+        <h2><%= @user.username %></h2>
+        <p><%= @user.email %></p>
+        <p><%= @user.phone %></p>
 
-<div>
-	<% @bookings.each do |booking| %>
-	<ul>
-		<li>
-			<p>Du <%= booking.checkin %> au <%= booking.checkout %></p> 
-			<p><%= booking.property.title %></p>
-		</li>
-	</ul>
-	<% end %>
+        <% @bookings.each do |booking| %>
+          <div class="card description mt-4 p-3">
+              <p>Du <%= booking.checkin %> au <%= booking.checkout %></p>
+              <p><%= booking.property.title %></p>
+          </div>
+        <% end %>
+     </div>
+   </div>
 </div>
