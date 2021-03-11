@@ -55,7 +55,7 @@ h3 {
 .btn-search {
   color: white;
   padding: 0px 24px;
-  border-radius: 10px;
+  border-radius: 0 10px 10px 0;
   background: $blue-fee;
   transition: background 0.3s ease;
   &:hover {
@@ -90,13 +90,36 @@ h3 {
 
 hr {
   color: white;
+  border-radius: 50%;
   height: 10px;
 }
 
-.fa-heart {
+.heart1 {
   position: relative;
   bottom: 20px;
   transform: rotate(15deg);
   color: white;
   font-size: 0.5em;
 }
+
+.heart2 {
+  position: relative;
+  bottom: 48px;
+  transform: rotate(-15deg);
+  color: white;
+  font-size: 0.4em;
+}
+
+.heart3 {
+  position: relative;
+  bottom: 75px;
+  right: 30px;
+  transform: rotate(5deg);
+  color: white;
+  font-size: 0.3em;
+}
+
+#border-set {
+  border-radius: 10px 0px 0px 10px;
+}
+
