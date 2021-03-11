@@ -28,7 +28,7 @@ class BookingsController < ApplicationController
     @booking.user = current_user
 
     if (Time.now - 1.days) < @booking.checkin && @booking.checkin < @booking.checkout && @booking.save
-      redirect_to property_path(@property)
+      redirect_to property_booking_path(@property, @current_user)
     else
       render :new
     end
