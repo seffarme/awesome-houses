@@ -8,7 +8,7 @@ class PropertiesController < ApplicationController
   # end
 
   def show
-
+    @markers = [{ lat: @property.latitude, lng: @property.longitude }]
   end
 
   def new

@@ -10,7 +10,6 @@
 }
 
 .banner h1 {
-
   margin: 0;
   color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
@@ -40,18 +39,13 @@ h3 {
 
 .wrapper-btn {
   display: flex;
-  /*height: 100px;*/
-  /*padding: 0 100px;*/
   justify-content: center;
-  /*justify-content: space-between*/;
   position: absolute;
   bottom: 24px;
   align-items: flex-end;
 }
 
 .wrapper-category {
- /* display: flex;
-  flex-direction: column;*/
   margin-right: 24px;
 }
 
@@ -79,8 +73,6 @@ h3 {
 }
 
 .btn-property {
-/*  position: absolute;
-  bottom: 20px;*/
   align-items: center;
   vertical-align: middle;
   color: white;
@@ -97,9 +89,6 @@ h3 {
     border: none;
   }
 }
-i {
-  /*display: inline;*/
-}
 
 hr {
   color: white;
@@ -113,5 +102,3 @@ hr {
   color: white;
   font-size: 0.5em;
 }
-
-
