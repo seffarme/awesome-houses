@@ -71,7 +71,7 @@ Property.create!( user_id: red.id,
                   price: '150',
                   description: "Forteresse de la terre du milieu.  il est surplombé au nord par le dernier sommet montagneux de la chaîne, le Methedras. Il se situe dans une vallée définie par deux prolongements des Monts Brumeux : Nan Curunír, la Vallée de Saroumane. Le fleuve Isen prend sa source à l'est de l'Isengard. Etage élevé, s'abstenir si vous êtes sujet au vertige",
                   category: 'Tour',
-                  address: "Massif du piton de la fournaise" )
+                  address: "Piton de la fournaise" )
 
 Property.create!( user_id: red.id,
                   title: 'Breaking Bad',
