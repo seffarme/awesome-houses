@@ -54,6 +54,7 @@ Property.create!( user_id: blue.id,
                   price: '500',
                   description: "Un portrait peut en cacher un autre",
                   category: 'Château',
+                  address: 'Alnwick'
                   )
 
 Property.create!( user_id: blue.id,
