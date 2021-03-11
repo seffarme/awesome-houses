@@ -46,69 +46,79 @@ puts "Creating properties..."
 Property.create!( user_id: blue.id,
                   title: 'Disneyland',
                   price: '400',
-                  description: "Endroit féérique. Attention, on nous a signalez des chiens qui parlaient...",
-                  category: 'Château' )
+                  description: "Véritable château de conte de fées avec ses flèches vertigineuses, ses tourelles richement décorées, ses toits d'un bleu royal, ses vitraux et ses tapisseries, la structure mesure 50 mètres de haut. Le château est entouré d'arbres en forme de cube et abrite un dragon assoupi qui s'éveille parfois pour rugir et souffler de la fumée par ses naseaux.
+                  Attention, ont été signalés des chiens qui parlaient...",
+                  category: 'Château',
+                  address: "Disneyland Paris, 77700 Chessy")
 
 Property.create!( user_id: blue.id,
-                  title: 'Harry Potter Castle',
+                  title: 'Poudlard',
                   price: '500',
-                  description: "Un portrait peut en cacher un autre",
+                  description: "Un portrait peut en cacher un autre. Pensionnat situé sur les collines d'Écosse. Il possède sept étages et plusieurs hautes tours, ainsi qu'un grand parc comprenant un lac, une forêt et plusieurs serres à des fins botaniques. Un grand nombre de passages dissimulés, d'escaliers et de portraits de peinture mouvants rendent l'établissement nécessite un strict respect du règlement.",
                   category: 'Château',
-                  address: 'Alnwick'
+                  address: "Alnwick NE66 1NQ, Royaume-Uni"
                   )
 
 Property.create!( user_id: blue.id,
                   title: 'Maman j ai raté l avion',
                   price: '200',
-                  description: "Jolie maison, un oeil attentif est requis",
-                  category: 'Maison' )
+                  description: "Jolie maison au bord du lac Michigan (Illinois), dans un quartier aisé. Un oeil attentif est requis, des cambriolages ont été signalés",
+                  category: 'Maison',
+                  address: "Winnetka" )
 
 Property.create!( user_id: red.id,
-                  title: 'Tour de Sarruman',
+                  title: 'Isengard - Tour de Sarouman',
                   price: '150',
-                  description: "Etage élevé",
-                  category: 'Tour' )
+                  description: "Forteresse de la terre du milieu.  il est surplombé au nord par le dernier sommet montagneux de la chaîne, le Methedras. Il se situe dans une vallée définie par deux prolongements des Monts Brumeux : Nan Curunír, la Vallée de Saroumane. Le fleuve Isen prend sa source à l'est de l'Isengard. Etage élevé, s'abstenir si vous êtes sujet au vertige",
+                  category: 'Tour',
+                  address: "Massif du piton de la fournaise" )
 
 Property.create!( user_id: red.id,
                   title: 'Breaking Bad',
-                  price: '50',
-                  description: "Un peu vétuste",
-                  category: 'Camping-car' )
+                  price: '20',
+                  description: "Logement un peu vétuste - les armes sont fournies",
+                  category: 'Camping-car',
+                  address: "Albuquerque" )
 
 Property.create!( user_id: violet.id,
                   title: 'Millenium Falcon',
                   price: '300',
                   description: "Des connaissances en techniques sont requises. Permet de nombreux déplacements",
-                  category: 'Vaisseau' )
+                  category: 'Vaisseau',
+                  address: "Futuna" )
 
 Property.create!( user_id: violet.id,
                   title: 'Shinning',
                   price: '200',
-                  description: "Hôtel excentré, au calme",
-                  category: 'Hôtel' )
+                  description: "Hôtel excentré, au calme. 142 chambres situé à Estes Park, au Colorado. Il offre une vue panoramique sur les montagnes Rocheuses et particulièrement le pic Longs.",
+                  category: 'Hôtel',
+                  address: " Estes Park, comté de Larimer, Colorado" )
 
 Property.create!( user_id: green.id,
                   title: 'Lampe du génie',
                   price: '100',
                   description: "Plus grand qu'il n'y parait",
-                  category: 'Autre' )
+                  category: 'Autre',
+                  address: "Casablanca, Maroc" )
 
 Property.create!( user_id: green.id,
                   title: 'Charmed',
                   price: '200',
                   description: "Maison charmante et qui saura vous charmer",
-                  category: 'Maison' )
+                  category: 'Maison',
+                  address: "1329 Prescott Street à San Francisco" )
 
 Property.create!( user_id: green.id,
                   title: 'Donjon Rouge - Port-Royal',
                   price: '600',
-                  description: "Jolie vue - les sièges peuvent piquer",
-                  category: 'Donjon' )
+                  description: "Jolie vue - les sièges peuvent piquer.",
+                  category: 'Donjon',
+                  address: "Port-Royal, Terre de la couronne" )
 
 Property.create!( user_id: blue.id,
                   title: 'Repaire de Quasimodo',
                   price: '400',
-                  description: "Vous apercevrez peut-être Esmeralda",
+                  description: "Vous apercevrez peut-être Esmeralda, ne vous penchez pas trop",
                   category: 'Tour',
                   address: '6 Parvis Notre-Dame - Place Jean-Paul II, 75004 Paris')
 
