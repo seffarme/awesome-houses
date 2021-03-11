@@ -1,0 +1,22 @@
+footer {
+  margin: 0;
+  /*list-style: none;*/
+  /*width: 450px;*/
+  background: $blue-fee;
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+  height: 100px;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  /*box-shadow: 0 -10px 30px 5px rgba(0, 0, 0, 1);*/
+  clip-path: polygon(0 0, 50% 8%, 100% 0, 100% 100%, 50% 100%, 0 100%);
+}
+
+.fa-heart {
+  color: white;
+}
+
+h4 {
+  font-size: 20px;
+  padding-top: 50px;
+}
