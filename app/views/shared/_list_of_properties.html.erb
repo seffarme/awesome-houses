@@ -1,15 +1,12 @@
 <div class="row justify-content-center">
   <% @properties.each do |property| %>
     <div class="card-trip">
-      <%= cl_image_tag("t7i2uktyh9biefnbyld7", width: 250, crop: :fill) %>
+      <% property.photos.each do |photo| %>
+        <%= cl_image_tag photo.key, width: 250, crop: :fill %>
+      <% end %>
       <div class="card-trip-infos">
         <div class="title-75pct">
           <h5 class="card-title"><%= link_to property.title, property_path(property) %></h5>
-          <% property.photos.each do |photo| %>
-            <div class="img-show">
-              <%= cl_image_tag photo.key, width: 250, crop: :fill %>
-            </div>
-          <% end %>
           <p>Short description here!</p>
         </div>
         <h2 class="card-trip-pricing"><%= property.price %> €</h2>
