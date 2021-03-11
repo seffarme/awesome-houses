@@ -10,9 +10,14 @@
       <%= property.price %> <i class="fas fa-euro-sign"></i>
       <%= property.category %>
     </div>
-    <div class="card-infos">
-      <div id="info"> <%= link_to "More info", property_path(property)%></div>
-    </div>
   </div>
 <% end %>
 </div>
+
+
+
+<!-- <div id="map"
+     style="width: 100%; height: 600px;"
+     data-markers="<%= @markers.to_json %>"
+     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+ -->
