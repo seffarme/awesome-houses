@@ -5,11 +5,14 @@
           <h2><%= @property.title %></h2>
           <% @property.photos.each do |photo| %>
           <div class="img-show">
-            <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
+            <%= cl_image_tag photo.key, height: 500, width: 1000, crop: :fill %>
           </div>
           <% end %>
         </div>
-
+<!-- cl_image_tag("lady.jpg", :transformation=>[
+  {:width=>400, :height=>400, :gravity=>"face", :radius=>"max", :crop=>"crop"},
+  {:width=>200, :crop=>"scale"}
+  ]) -->
         <div class="card description mt-4 p-3">
           <p><%= @property.description %></p>
         </div>
