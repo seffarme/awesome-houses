@@ -9,7 +9,7 @@
       <form class="simple_form col" id="filter_property" action="/properties/by_category" accept-charset="UTF-8" method="get">
         <div class="form-group select required property_category">
           <select class="form-control select required" name="category" id="category">
-            <% Property::CATEGORIES.sort.each do |cat| %>
+            <% Property::CATEGORIES.sort.each do |cat| %><option value=""></option>
               <% if @selected == cat %>
                 <option value=<%= cat %> selected > <%= cat %> </option>
               <% else %>
