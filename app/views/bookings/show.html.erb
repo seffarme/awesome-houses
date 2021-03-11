@@ -9,6 +9,5 @@
 	  <% @bookings.each do |booking| %>
 	    <p>Du <%= booking.checkin %> au <%= booking.checkout %></p> 
 	  <% end %>
-	  <p class="btn btn-info"><%= link_to 'Modifier', edit_property_path(@property) %></p>
 	</div>
 </div>
