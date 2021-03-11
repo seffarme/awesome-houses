@@ -19,6 +19,10 @@
           <p>Prix: <%= @property.price%> <i class="fas fa-euro-sign"></i></p>
         </div>
 
+        <div id="map"
+        style="width: 400px; height: 300px;"
+        data-markers="<%= @markers.to_json %>"
+        data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
 
         <div class="card-footer bg-transparent mt-4">
           <div class="col-sm d-flex justify-content-around">
