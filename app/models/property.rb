@@ -1,5 +1,5 @@
 class Property < ApplicationRecord
-  CATEGORIES = ['Château', 'Maison', 'Tour', 'Camping-car', 'Vaisseau', 'Hôtel', 'Autre', 'Donjon'].freeze
+  CATEGORIES = ['Château', 'Maison', 'Tour', 'Camping-car', 'Vaisseau', 'Hôtel', 'Autre', 'Donjon', 'Appartement'].freeze
   belongs_to :user
   has_many :bookings
   has_many_attached :photos
