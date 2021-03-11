@@ -1,9 +1,11 @@
 <%= simple_form_for(property) do |f| %>
-  <%= f.input :title,  label: "Nom de la propriété" %>
-  <%= f.input :category, label: "Catégorie", collection: Property::CATEGORIES, class: 'form-control beautiful-dropdown', include_hidden: false %>
+  <%= f.input :title,     label: "Nom de la propriété" %>
+  <%= f.input :category,  label: "Catégorie", collection: Property::CATEGORIES, class: 'form-control beautiful-dropdown', include_hidden: false %>
   <%= f.input :description %>
-  <%= f.input :price, label: "Prix par nuit" %>
-  <%= f.input :photos, as: :file, input_html: { multiple: true } %>
+  <%= f.input :address,   label: "Adresse" %>
+  <%= f.input :price,     label: "Prix par nuit" %>
+  <%= f.input :photos, as: :file, input_html: { id: "imgInp", multiple: true } %>
 
-  <%= f.submit "Modifier la propriété"%>
+  <%= f.submit "Ajouter mon bien", id: 'test' %>
 <% end %>
+

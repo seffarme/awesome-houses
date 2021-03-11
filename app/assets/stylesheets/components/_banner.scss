@@ -33,7 +33,10 @@ h3 {
   margin-bottom: 0rem;
   border-radius: 10px 0px 0px 10px; /* ne marche pas */
 }
+
 #filter_property {
+  display: flex;
+  flex: wrap;
   padding: 0px;
 }
 
@@ -61,15 +64,10 @@ h3 {
   }
 }
 
-
 .wrapper-property {
   align-self: flex-end;
   display: flex;
   height: 38px;
-
-}
-
-#new_property {
 }
 
 .btn-property {
