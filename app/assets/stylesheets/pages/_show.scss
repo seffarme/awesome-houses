@@ -2,3 +2,41 @@
   display: flex;
   justify-content: center;
 }
+
+.btn-pink {
+/*  position: absolute;
+  bottom: 20px;*/
+  align-items: center;
+  vertical-align: middle;
+  color: white;
+  padding: 6px 20px;
+  border-radius: 10px;
+  background: $pink-fee;
+  transition: background 0.3s ease;
+  border: 1px solid transparent;
+  &:hover {
+    text-decoration: none;
+    background: $pink-fee;
+    box-shadow: 0 4px 8px rgba(214,108,182,0.5);
+    color: white;
+    border: none;
+  }
+  a {
+    color: white;
+  }
+}
+
+.btn-green {
+  color: white;
+  padding: 6px 20px;
+  border-radius: 10px;
+  background: $blue-fee;
+  transition: background 0.3s ease;
+  &:hover {
+    box-shadow: 0 4px 8px rgba(115,219,230,0.5);
+    color: white;
+  }
+   a {
+    color: white;
+  }
+}

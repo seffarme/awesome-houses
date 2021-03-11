@@ -7,6 +7,7 @@ before_action :set_user, only: [:show, :edit, :update, :destroy]
   end
 
   def show
+    @bookings = Booking.where( 'user_id = ?', @user )
     
   end
 
@@ -19,7 +20,7 @@ before_action :set_user, only: [:show, :edit, :update, :destroy]
   end
 
   def edit
-    
+    @user = User.find(params[:id])
   end
 
 
