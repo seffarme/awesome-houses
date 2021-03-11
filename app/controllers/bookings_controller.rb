@@ -1,16 +1,24 @@
 class BookingsController < ApplicationController
   before_action :set_property, only: [:edit, :update]
 
+  def index
+    @bookings = Booking.all    
+  end
+
+  def show
+    @property = Property.find(params[:property_id])
+    @bookings = Booking.where(property_id: @property.id)
+    @dates = @bookings.map do |booking|
+      {
+        from: booking.checkin,
+        to: booking.checkout
+      }
+    end
+  end
+
   def new
     @property = Property.find(params[:property_id])
     @booking = Booking.new
-    # @bookings = Booking.where(property_id: @property.id)
-    # @dates = @bookings.map do |booking|
-    #   {
-    #     from: booking.checkin,
-    #     to: booking.checkout
-    #   }
-    # end
   end
 
   def create
@@ -19,12 +27,11 @@ class BookingsController < ApplicationController
     @booking.property = @property
     @booking.user = current_user
 
-    # if (Time.now - 1.days) < @booking.checkin && @booking.checkin < @booking.checkout && @booking.save
-    #   redirect_to property_path(@property)
-    # else
-      # render :new
-    # end
-
+    if (Time.now - 1.days) < @booking.checkin && @booking.checkin < @booking.checkout && @booking.save
+      redirect_to property_path(@property)
+    else
+      render :new
+    end
   end
 
   def edit
@@ -42,7 +49,7 @@ class BookingsController < ApplicationController
   end
 
   def booking_params
-    params.require(:booking).permit(:checkin, :checkout)
+    params.require(:booking).permit(:checkin, :checkout, :current_user, :property_id)
   end
 
 end

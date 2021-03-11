@@ -3,6 +3,8 @@
 <p><%= @user.phone %></p>
 <p><%= @user.description %></p>
 
+<p><%= @user.bookings %></p>
+
 <%= link_to "Delete #{@user.mail}",
             user_path(@user),
             method: :delete,
