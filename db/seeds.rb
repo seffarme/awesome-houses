@@ -90,7 +90,7 @@ Property.create!( user_id: green.id,
                   title: 'Lampe du génie',
                   price: '100',
                   description: "Plus grand qu'il n'y parait",
-                  category: 'Insolite' )
+                  category: 'Autre' )
 
 Property.create!( user_id: green.id,
                   title: 'Charmed',
