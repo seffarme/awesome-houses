@@ -5,6 +5,6 @@ Rails.application.routes.draw do
     collection do
       get :by_category
     end
-    resources :bookings, only: [ :new, :create ]
+    resources :bookings, only: [ :new, :create, :index, :show ]
   end
 end
