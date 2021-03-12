@@ -63,9 +63,9 @@ a {
 .card-trip .card-trip-infos {
   padding: 10px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: flex-end;
-  position: relative;
+  height: 100px
 }
 
 .card-trip-infos .card-trip-user {
@@ -76,5 +76,6 @@ a {
 }
 
 .title-75pct {
-width: 75%;
+  display: flex;
+  justify-content: space-between;
 }

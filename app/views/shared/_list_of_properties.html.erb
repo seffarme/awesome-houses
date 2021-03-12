@@ -4,11 +4,11 @@
       <% property.photos.each do |photo| %>
         <%= cl_image_tag photo.key, width: 800, crop: :lfill %>      <% end %>
       <div class="card-trip-infos">
+        <h5 class="card-title"><%= link_to property.title, property_path(property) %></h5>
         <div class="title-75pct">
-          <h5 class="card-title"><%= link_to property.title, property_path(property) %></h5>
           <p><%= property.category %></p>
+          <h2><%= property.price %> €</h2>
         </div>
-        <h2 class="card-trip-pricing"><%= property.price %> €</h2>
 <!--    <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" /> -->
       </div>
     </div>
