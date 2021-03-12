@@ -60,7 +60,7 @@ Property.create!( user_id: jonathan.id,
                   )
 
 Property.create!( user_id: jonathan.id,
-                  title: 'Maman j ai raté l avion',
+                  title: "Maison des McCallister",
                   price: '200',
                   description: "Jolie maison au bord du lac Michigan (Illinois), dans un quartier aisé. Un oeil attentif est requis, des cambriolages ont été signalés",
                   category: 'Maison',
@@ -69,16 +69,16 @@ Property.create!( user_id: jonathan.id,
 Property.create!( user_id: laury.id,
                   title: 'Isengard - Tour de Sarouman',
                   price: '150',
-                  description: "Forteresse de la terre du milieu.  il est surplombé au nord par le dernier sommet montagneux de la chaîne, le Methedras. Il se situe dans une vallée définie par deux prolongements des Monts Brumeux : Nan Curunír, la Vallée de Saroumane. Le fleuve Isen prend sa source à l'est de l'Isengard. Etage élevé, s'abstenir si vous êtes sujet au vertige",
+                  description: "Forteresse de la terre du milieu. Surplombée au nord par le dernier sommet montagneux de la chaîne, le Methedras. Il se situe dans une vallée définie par deux prolongements des Monts Brumeux : Nan Curunír, la Vallée de Saroumane. Le fleuve Isen prend sa source à l'est de l'Isengard. Etage élevé, s'abstenir si vous êtes sujet au vertige.",
                   category: 'Tour',
-                  address: "Piton de la fournaise" )
+                  address: "Halkirk KW12 6UR, Royaume-Uni" )
 
 Property.create!( user_id: laury.id,
-                  title: 'Breaking Bad',
+                  title: 'Caravane de Jesse Pinkman',
                   price: '20',
-                  description: "Logement un peu vétuste - les armes sont fournies",
+                  description: "Logement un peu vétuste - les armes sont fournies.",
                   category: 'Camping-car',
-                  address: "Albuquerque" )
+                  address: "Isleta Pueblo - Albuquerque, Nouveau-Mexique - États-Unis" )
 
 Property.create!( user_id: laury.id,
                   title: 'Millenium Falcon',
@@ -88,44 +88,44 @@ Property.create!( user_id: laury.id,
                   address: "Futuna" )
 
 Property.create!( user_id: laury.id,
-                  title: 'Shinning',
+                  title: 'Stanley Hotel',
                   price: '200',
-                  description: "Hôtel excentré, au calme. 142 chambres situé à Estes Park, au Colorado. Il offre une vue panoramique sur les montagnes Rocheuses et particulièrement le pic Longs.",
+                  description: "Hôtel excentré, au calme. 142 chambres. Situé à Estes Park, au Colorado. Il offre une vue panoramique sur les montagnes Rocheuses et particulièrement le pic Longs.",
                   category: 'Hôtel',
-                  address: " Estes Park, comté de Larimer, Colorado" )
+                  address: "1776 Mountainside Dr, Estes Park, CO 80511, États-Unis" )
 
 Property.create!( user_id: elodie.id,
                   title: 'Lampe du génie',
                   price: '100',
-                  description: "Plus grand qu'il n'y parait",
+                  description: "Plus grand qu'il n'y parait. Situé dans le bazar d'Agrabah, vous aurez de la difficulté à trouver mais une fois entré, un monde de possibilités s'ouvre à vous!",
                   category: 'Autre',
-                  address: "Casablanca, Maroc" )
+                  address: "Avenue Al Wahda Al Ifriquia, Casablanca, Maroc" )
 
 Property.create!( user_id: laury.id,
-                  title: 'Charmed',
+                  title: 'Manoir Halliwell',
                   price: '200',
-                  description: "Maison charmante et qui saura vous charmer",
+                  description: "Maison charmante et qui saura vous charmer.",
                   category: 'Maison',
-                  address: "1329 Prescott Street à San Francisco" )
+                  address: "Steiner St &, Hayes St, San Francisco, CA 94117, États-Unis" )
 
 Property.create!( user_id: elodie.id,
-                  title: 'Donjon Rouge - Port-Royal',
+                  title: 'Donjon Rouge',
                   price: '600',
-                  description: "Jolie vue - les sièges peuvent piquer.",
+                  description: "Jolie vue mer - de nombreuses chambres. Les sièges peuvent piquer.",
                   category: 'Donjon',
-                  address: "Port-Royal, Terre de la couronne" )
+                  address: "Тахтоямск - Oblast de Magadan -Russie" )
 
 Property.create!( user_id: elodie.id,
                   title: 'Repaire de Quasimodo',
                   price: '400',
-                  description: "Vous apercevrez peut-être Esmeralda, ne vous penchez pas trop",
+                  description: "Situé sur l'île de la Cité, siège de l'archidiocèse de Paris, dédiée à la Vierge Marie. Vue dégagée. Vous apercevrez peut-être Esmeralda, ne vous penchez pas trop. Gargouilles sympathiques.",
                   category: 'Tour',
                   address: '6 Parvis Notre-Dame - Place Jean-Paul II, 75004 Paris')
 
 Property.create!( user_id: thierry.id,
                   title: 'La petite maison dans la prairie',
                   price: '200',
-                  description: "Environnement vert- maison en constante rénovation. Situé à Plum Creek non loin du village de Walnut Grove.",
+                  description: "Environnement vert. Maison en constante rénovation. Situé à Plum Creek non loin du village de Walnut Grove.",
                   category: 'Maison',
                   address: 'Minnesota')
 
@@ -137,32 +137,32 @@ Property.create!( user_id: laury.id,
                   address: '100 Universal City Plaza, Universal City, CA 91608, États-Unis')
 
 Property.create!( user_id: thierry.id,
-                  title: 'Star Trek',
+                  title: 'USS Enterprise NCC-1701',
                   price: '500',
                   description: "Grâce à un moteur à distorsion, l'univers s'ouvrira à vous!",
                   category: 'Maison',
                   address: 'Futuna')
 
 Property.create!( user_id: thierry.id,
-                  title: 'Hobbiton - Bilbo',
+                  title: 'Maison de Bilbo',
                   price: '100',
-                  description: "Les collines verdoyantes entourent cette jolie maisonnette. Beaucoup d'arrondis, taille réduite de préférence.",
+                  description: "Des collines verdoyantes entourent cette jolie maisonnette. Beaucoup d'arrondis, taille réduite de préférence.",
                   category: 'Maison',
                   address: 'Hobbiton, Nouvelle-Zélande')
 
 Property.create!( user_id: laury.id,
                   title: 'Château de Kaer Morhen',
                   price: '200',
-                  description: "Forteresse de l’Ancienne Mer, forteresse de Kaedwen et l'antre des sorceleurs de l'école du Loup.",
+                  description: "Forteresse de l’Ancienne Mer, antre des sorceleurs de l'école du Loup.",
                   category: 'Château',
                   address: 'Autriche')
 
 Property.create!( user_id: jonathan.id,
                   title: 'Donjon de Naheulbeuk',
                   price: '150',
-                  description: "Escalier obscur et glissant6, au pied duquel se trouve quelques orques.",
+                  description: "Escalier obscur et glissant, au pied duquel se situent quelques orques.",
                   category: 'Donjon',
-                  address: 'Puy de dôme')
+                  address: 'Queille, Puy de dôme')
 
 Property.create!( user_id: jonathan.id,
                   title: 'Château Ambulant',
@@ -174,17 +174,17 @@ Property.create!( user_id: jonathan.id,
 Property.create!( user_id: elodie.id,
                   title: 'Manoir Addams',
                   price: '200',
-                  description: "Située dans le quartier historique de Clinton Hill à Brooklyn, cette maison bourgeoise du XIXe siècle - de plus de 340 m² - comprend 3 chambres. Petite ambiance funèbre pour les amateurs.",
+                  description: "Situé dans le quartier historique de Clinton Hill à Brooklyn, cette maison bourgeoise du XIXe siècle - de plus de 340 m² - comprend 3 chambres. Petite ambiance funèbre pour les amateurs.",
                   category: 'Autre',
-                  address: 'Brooklin')
+                  address: '272 Lafayette Avenue, Brooklyn, NY 11238, États-Unis')
 
 
 Property.create!( user_id: elodie.id,
-                  title: 'Chaumière Astérix',
+                  title: "Chaumière d'Astérix",
                   price: '50',
                   description: "Un peu vétuste mais charme typiquement français. Poisson pouvant manquer de fraicheur.",
                   category: 'Maison',
-                  address: 'Morlaix, Bretagne')
+                  address: 'Ashikuraji, Tateyama, District de Nakaniikawa, Préfecture de Toyama 930-1406, Japon')
 
 Property.create!( user_id: elodie.id,
                   title: 'Vaisseau du Shield',
@@ -194,23 +194,23 @@ Property.create!( user_id: elodie.id,
                   address: 'Futuna')
 
 Property.create!( user_id: thierry.id,
-                  title: "Batcave",
+                  title: "Manoir de Bruce Wayne",
                   price: '200',
-                  description: "Repaire secret et quartier général souterrain installé dans un réseau de grottes se trouvant sous une résidence personnelle.",
+                  description: "Joli Manoir contenant un quartier général souterrain installé dans un réseau de grottes se trouvant sous une résidence personnelle.",
                   category: 'Autre',
-                  address: '1007 Mountain Drive, Gotham City.')
+                  address: '1007 Mountain Drive, Gotham City')
 
 Property.create!( user_id: jonathan.id,
-                  title: 'Appartement Spiderman',
+                  title: 'Appartement de Spiderman',
                   price: '100',
-                  description: "Arachnophobes, s'abstenir",
+                  description: "Arachnophobes, s'abstenir.",
                   category: 'Appartement',
                   address: 'New York')
 
 Property.create!( user_id: laury.id,
-                  title: 'Appartement Carrie Bradshaw',
+                  title: 'Appartement de Carrie Bradshaw',
                   price: '200',
-                  description: "Grand dressign, proche de toutes commodités. Machine à écrire sur place.",
+                  description: "Grand dressing, proche de toutes commodités. Machine à écrire sur place.",
                   category: 'Appartement',
                   address: 'Greenwich Village')
 
