@@ -4,7 +4,7 @@ const initReadURL = () => {
         var reader = new FileReader();
 
         reader.onload = function (e) {
-          $('#blah').attr('style', `background-image: url(${e.target.result})`);
+          $('#blah').attr('style', `background: url(${e.target.result}) no-repeat fixed center`);
         }
 
         reader.readAsDataURL(input.files[0]);
