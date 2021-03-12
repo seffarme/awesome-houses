@@ -5,7 +5,7 @@
           <h2><%= @property.title %></h2>
           <% @property.photos.each do |photo| %>
           <div class="img-show">
-            <%= cl_image_tag photo.key, height: 400, width: 500, crop: :fit %>
+            <%= cl_image_tag photo.key, height: 450, crop: :fill %>
           </div>
           <% end %>
         </div>
