@@ -2,8 +2,8 @@
 <ul>
   <% @bookings.each do |booking| %>
 
-    <li><%= booking.checkin %>-</li>
-    <li><%= booking.checkout %></li>
+    <li><%= booking.checkin.strftime("%d/%m/%Y") %>-</li>
+    <li><%= booking.checkout.strftime("%d/%m/%Y") %></li>
     <li><%= booking.user.username %></li>
     <li><%= booking.property.title %></li>
   <% end %>

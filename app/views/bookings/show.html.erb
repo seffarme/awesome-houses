@@ -6,7 +6,7 @@
 
 
       <% @bookings.each do |booking| %>
-        <p>Du <%= booking.checkin %> au <%= booking.checkout %></p>
+        <p>Du <%= booking.checkin.strftime("%d/%m/%Y") %> au <%= booking.checkout.strftime("%d/%m/%Y") %></p>
       <% end %>
       </div>
   </div>
