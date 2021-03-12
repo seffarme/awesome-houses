@@ -1,13 +1,14 @@
-
 <div class="container">
-	<div class="card center">
-		<h2>Réserver votre propriété</h2>
-	</div>
-	<div class="container" id="booking-form-div" style="width: 400px">
-	  <%= simple_form_for [@property, @booking] do |f| %>
-	    <%= f.input :checkin, as: :string, input_html: { id: "range_start", class: "d-none"} %>
-	    <%= f.input :checkout, as: :string, input_html: { id: "range_end", class: "flatpickr"} %>
-	    <%= f.button :submit, 'Réserver', class: "btn btn-primary" %>
-	  <% end %>
-	</div>
+  <div class="user-bookings-form-center">
+  	<div class="card center">
+  		<h2>Réserver votre propriété</h2>
+  	</div>
+  	<div class="container" id="booking-form-div" style="width: 400px">
+  	  <%= simple_form_for [@property, @booking] do |f| %>
+  	    <%= f.input :checkin, as: :string, input_html: { id: "range_start", class: "d-none"} %>
+  	    <%= f.input :checkout, as: :string, input_html: { id: "range_end", class: "flatpickr"} %>
+  	    <%= f.button :submit, 'Réserver', class: "btn btn-primary" %>
+  	  <% end %>
+  	</div>
+  </div>
 </div>

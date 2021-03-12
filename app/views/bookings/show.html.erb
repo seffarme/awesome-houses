@@ -1,13 +1,13 @@
 <div class="container">
+  <div class="user-bookings-form-center">
+    <div class="card text-center br4">
+      <h2>Réservation Confirmée!</h2>
+      <p>Réservation aux dates suivantes :</p>
 
-	<div class="card text-center br4">
-		<h2>Réservation Confirmée!</h2>
-		<p>Réservation aux dates suivantes :</p>
 
-
-
-	  <% @bookings.each do |booking| %>
-	    <p>Du <%= booking.checkin %> au <%= booking.checkout %></p> 
-	  <% end %>
-	</div>
+      <% @bookings.each do |booking| %>
+        <p>Du <%= booking.checkin %> au <%= booking.checkout %></p>
+      <% end %>
+      </div>
+  </div>
 </div>

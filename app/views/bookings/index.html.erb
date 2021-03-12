@@ -1,9 +1,11 @@
+<div class="user-bookings-form-center">
 <ul>
   <% @bookings.each do |booking| %>
 
-    <li><%= booking.checkin %>-</li>  
+    <li><%= booking.checkin %>-</li>
     <li><%= booking.checkout %></li>
     <li><%= booking.user.username %></li>
     <li><%= booking.property.title %></li>
   <% end %>
 </ul>
+</div>
