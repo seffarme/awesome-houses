@@ -74,3 +74,18 @@ h1 {
 .display-bg-img {
 
 }
+
+.user-bookings-form-center {
+  background-color: rgba(255,255,255,0.7);
+  z-index: 10;
+  width: 600px;
+  margin: 0 auto;
+  // display: flex;
+  /*flex-direction: column;*/
+  /*align-items: center;*/
+  justify-content: center;
+  border: 1px solid $blue-fee;
+  border-radius: 15px;
+  padding: 35px 0;
+  box-shadow: 0 0 10px 0px $blue-fee;
+}
