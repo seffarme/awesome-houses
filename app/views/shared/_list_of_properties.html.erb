@@ -2,8 +2,7 @@
   <% @properties.each do |property| %>
     <div class="card-trip">
       <% property.photos.each do |photo| %>
-        <%= cl_image_tag photo.key, width: 250, crop: :fill %>
-      <% end %>
+        <%= cl_image_tag photo.key, width: 800, crop: :lfill %>      <% end %>
       <div class="card-trip-infos">
         <div class="title-75pct">
           <h5 class="card-title"><%= link_to property.title, property_path(property) %></h5>
